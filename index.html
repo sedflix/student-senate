@@ -10,8 +10,6 @@
     <meta name="keywords" content=""/>
     <meta name="author" content=""/>
     <link rel="shortcut icon" href="">
-    <!-- food icons -->
-    <link rel="stylesheet" type="text/css" href="css/organicfoodicons.css"/>
     <!-- demo styles -->
     <link rel="stylesheet" type="text/css" href="css/demo.css"/>
     <!-- menu styles -->
@@ -25,7 +23,7 @@
     <header class="bp-header cf">
         <div class="dummy-logo">
             <!--<div class="dummy-icon foodicon foodicon&#45;&#45;coconut"></div>-->
-            <h1 class="dummy-heading">Student Senate</h1>
+            <h1 class="dummy-heading"><span style="font-size:12px; color:#333;">IIITD</span> <br>Student Senate </h1>
         </div>
     </header>
     <button class="action action--open" aria-label="Open Menu"><span class="icon icon--menu"></span></button>
@@ -34,13 +32,13 @@
         <div class="menu__wrap">
             <ul data-menu="main" class="menu__level" tabindex="-1" role="menu" aria-label="All">
                 <li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-1"
-                                                          aria-owns="submenu-1" href="#">About Us</a></li>
+                                                          aria-owns="submenu-1" href="#about-us">About Us</a></li>
                 <li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-2"
-                                                          aria-owns="submenu-2" href="#">Our Work</a></li>
+                                                          aria-owns="submenu-2" href="#our-work">Our Work</a></li>
                 <li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-3"
-                                                          aria-owns="submenu-3" href="#">Talk to Us</a></li>
+                                                          aria-owns="submenu-3" href="#contact-us">Talk to Us</a></li>
                 <li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-4"
-                                                          aria-owns="submenu-4" href="#">Resources</a></li>
+                                                          aria-owns="submenu-4" href="#resources">Resources</a></li>
             </ul>
             <!-- Submenu 1 -->
             <ul data-menu="submenu-1" id="submenu-1" class="menu__level" tabindex="-1" role="menu"
@@ -110,6 +108,10 @@
             <!--<li class="menu__item" role="menuitem"><a class="menu__link" href="#">Allergy Free</a></li>-->
             <!--</ul>-->
         </div>
+        <div class="bottomStuff">
+            <p> Made with <3 by <a href="mailto:siddharth16268@iiitd.ac.in">Siddharth</a></p>
+        </div>
+
     </nav>
     <div class="content">
         <iframe class="airtable-embed"
@@ -122,17 +124,16 @@
 </div>
 <!-- /view -->
 <script src="js/classie.js"></script>
-<script src="js/dummydata.js"></script>
 <script src="js/main.js"></script>
 <script src="js/embeddedData.js"></script>
 <script>
     (function () {
         var menuEl = document.getElementById('ml-menu'),
                 mlmenu = new MLMenu(menuEl, {
-                    // breadcrumbsCtrl : true, // show breadcrumbs
-                    // initialBreadcrumb : 'all', // initial breadcrumb text
+                    breadcrumbsCtrl: true, // show breadcrumbs
+                    initialBreadcrumb: 'Home', // initial breadcrumb text
                     backCtrl: false, // show back button
-                    // itemsDelayInterval : 60, // delay between each menu item sliding animation
+                    itemsDelayInterval: 0, // delay between each menu item sliding animation
                     onItemClick: loadDummyData // callback: item that doesn´t have a submenu gets clicked - onItemClick([event], [inner HTML of the clicked item])
                 });
 
