@@ -108,14 +108,14 @@ body {
     position: absolute;
     right: 0;
     padding: 0.25em 1.25em;
-    color: #2a2b30;
+    color: #FF1744;
 }
 
 .menu__link:hover,
 .menu__link:focus,
 .menu__link[data-submenu]:hover::after,
 .menu__link[data-submenu]:focus::after {
-    color: #FF1744;
+    color: red;
 }
 
 .menu__link--current::before {
@@ -368,7 +368,7 @@ body {
     left: 0;
     padding-bottom: 3%;
     font-weight: 300;
-    font-size: 12px;
+    font-size: 16px;
 }
 
 /* Resets */
@@ -709,4 +709,8 @@ body #cdawrap a:hover.carbon-poweredby {
     font-size: 200%;
     font-weight: 400;
     color: #808080;
+}
+
+.red {
+    color: #FF1744;
 }
