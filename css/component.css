@@ -358,6 +358,7 @@ body {
         -webkit-transform: translate3d(0, 0, 0);
         transform: translate3d(0, 0, 0);
     }
+
 }
 
 .bottomStuff {
@@ -681,7 +682,7 @@ body #cdawrap a:hover.carbon-poweredby {
 }
 
 .heading-content {
-    font-weight: 300;
+    font-weight: 600;
     font-size: 360%;
     color: #404040;
     margin-bottom: 15%;
@@ -693,7 +694,7 @@ body #cdawrap a:hover.carbon-poweredby {
 }
 
 .block-heading {
-    font-weight: 300;
+    font-weight: 500;
     font-size: 250%;
     color: #505050;
     margin-bottom: 0;
@@ -714,3 +715,8 @@ body #cdawrap a:hover.carbon-poweredby {
 .red {
     color: #1abc9c;
 }
+
+.SS {
+    font-size: 14vh;
+}
+
