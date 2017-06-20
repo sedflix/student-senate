@@ -1,0 +1,234 @@
+.members img {
+    padding: 3%;
+}
+
+.members .col-md-3, .members .col-md-4, .members .col-md-6 {
+    padding: 4%;
+}
+
+.members .col-md-3 img, .members .col-md-4 img, .members .col-md-6 img {
+    transition: all 0.5s ease-out;
+    -webkit-filter: grayscale(1);
+}
+
+.members .col-md-3:hover img, .members .col-md-4:hover img, .members .col-md-6:hover img {
+    transform: scale(1.2, 1.2);
+    -webkit-filter: grayscale(0);
+}
+
+.members .col-md-3 p, .members .col-md-4 p, .members .col-md-3 h3, .members .col-md-4 h3, .members .col-md-6 h3 {
+    transition: all 0.3s ease-out;
+    color: #3FADA8;
+}
+
+.members .col-md-3:hover p, .members .col-md-4:hover p, .members .col-md-3:hover h3, .members .col-md-4:hover h3, .members .col-md-6:hover h3 {
+    color: #222222;
+    text-shadow: 1px 0px 4px rgba(114, 114, 114, 0.89);
+}
+
+.members .col-md-4 .opp, .members .col-md-3 .opp, .members .col-md-6 .opp {
+    color: #222222;
+    transition: all 0.3s ease-out;
+}
+
+.members .col-md-4:hover .opp, .members .col-md-3:hover .opp, .members .col-md-6:hover .opp {
+    color: white;
+    text-shadow: 1px 0px 4px rgba(114, 114, 114, 0.89);
+}
+
+.navbar li {
+    transition: all 0.5s ease-out;
+    border-radius: 5px;
+}
+
+.navbar li:hover {
+    background-color: #3FADA8;
+    color: #808080;
+}
+
+body {
+    background-color: #f2f2f2;
+    font-family: "Open Sans";
+    font-weight: 300;
+    font-size: 22px;
+    padding-top: 50px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Open Sans";
+    font-weight: 300;
+}
+
+a {
+    color: #111111;
+    font-size: 30px;
+}
+
+.centered {
+    text-align: center;
+}
+
+#header {
+    background: url("../img/cover.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    padding-top: 30vh;
+    padding-bottom: 25vh;
+    height: 100vh;
+    position: relative;
+}
+
+.about {
+    background: url("../img/cover.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    padding-top: 15vh;
+    padding-bottom: 15vh;
+    position: relative;
+}
+
+#header h1 {
+    margin-top: 10px;
+    color: white;
+    font-size: 70px;
+}
+
+#content {
+    padding-top: 50px;
+    /*padding-bottom: 50px;*/
+    border-top: #808080 solid 1px;
+}
+
+h1 {
+    padding-bottom: 50px;
+    font-size: 60px;
+    color: #111111;
+}
+
+h2 {
+    font-size: 40px;
+    color: #111111;
+}
+
+h3 {
+    font-size: 30px;
+    color: #111111;
+}
+
+p {
+    color: #222222;
+}
+
+#whatsnew {
+    display: block;
+    padding-bottom: 50px;
+    background-color: #CECECE;
+}
+
+#whatsnew h1 {
+    padding-bottom: 50px;
+    color: #222222;
+    font-size: 60px;
+}
+
+#contact {
+    /*background:url("../img/cover2.png");
+  background-repeat: no-repeat;
+  background-position: center center;*/
+    background-color: #333333;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+#contact h1 {
+    font-size: 60px;
+}
+
+#contact a {
+    color: #FFFFFF;
+    font-size: 30px;
+}
+
+#nvb a {
+    font-size: 20px;
+}
+
+.IIITDlogo {
+    min-width: 300px;
+    width: 80%;
+    max-width: 500px;
+    padding-bottom: 20px;
+}
+
+.lin a, .lin {
+    transition: all 0.3s ease-in-out;
+
+}
+
+.lin {
+    padding: 1%;
+}
+
+.lin:hover a {
+    text-decoration: none;
+    color: #3FADA8;
+    transform: scale(1.1, 1.1);
+}
+
+.lin a:hover {
+    text-decoration: none;
+}
+
+#wh {
+    color: white;
+!important
+}
+
+#sha {
+    -webkit-box-shadow: inset 1px -5px 67px -2px rgba(34, 34, 34, 1);
+    -moz-box-shadow: inset 1px -5px 67px -2px rgba(34, 34, 34, 1);
+    box-shadow: inset 1px -5px 67px -2px rgba(34, 34, 34, 1);
+}
+
+a, a:hover {
+    text-decoration: none;
+}
+
+.blk3 {
+    color: rgba(35, 35, 35, 1.00);
+    transition: all ease-in-out 0.4s;
+    padding: 5% 1% 2% 1%;
+}
+
+.blk3 h2 {
+    font-size: 28px;
+}
+
+.blk3 p {
+    color: rgba(35, 35, 35, 1.00);;
+    font-size: 18px;
+}
+
+.blk3 .but {
+    color: rgba(35, 35, 35, 1.00);;
+}
+
+.blk3:hover {
+    transform: scale3d(1.1, 1.1, 5);
+    background-color: rgba(63, 175, 168, 0.63);
+    z-index: 10000;
+}
+
+tr {
+    transition: all 0.5s ease-in-out;
+}
+
+tr:hover {
+    color: white;
+    text-shadow: 1px 0px 4px rgba(114, 114, 114, 0.89);
+}
+
