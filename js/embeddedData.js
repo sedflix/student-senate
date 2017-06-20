@@ -18,4 +18,6 @@ var links = {
     "Quick Link": '<iframe class="airtable-embed" src="https://airtable.com/embed/shrTXxDCIufvPbitu?backgroundColor=teal&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="100%" style="background: transparent; border: 1px solid #ccc;"></iframe>',
     "Submit a Quick Link": '<iframe class="airtable-embed" src="https://airtable.com/embed/shrTIAgqYnSCDpDFd?backgroundColor=teal" frameborder="0" onmousewheel="" width="100%" height="100%" style="background: transparent; border: 1px solid #ccc;"></iframe>',
     "View All": '<iframe class="airtable-embed" src="https://airtable.com/embed/shrCcWmgG9WheZ1eQ?backgroundColor=teal" frameborder="0" onmousewheel="" width="100%" height="100%" style="background: transparent; border: 1px solid #ccc;"></iframe>',
+    "View Resources": '<iframe class="airtable-embed" src="https://airtable.com/embed/shrQc4NUFtSS4aqon?backgroundColor=teal&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="100%" style="background: transparent; border: 1px solid #ccc;"></iframe>',
+    "Submit a Resource": '<iframe class="airtable-embed" src="https://airtable.com/embed/shreFa0s2hanuO6Z9?backgroundColor=teal" frameborder="0" onmousewheel="" width="100%" height="100%" style="background: transparent; border: 1px solid #ccc;"></iframe>'
 };
