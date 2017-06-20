@@ -97,7 +97,7 @@ body {
     position: relative;
     display: block;
     padding: 1em 2.5em 1em 1.5em;
-    color: #808080;
+    color: #333;
     -webkit-transition: color 0.1s;
     transition: color 0.1s;
 }
