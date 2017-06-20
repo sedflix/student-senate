@@ -13,7 +13,7 @@ body {
     font-family: 'Quicksand';
     overflow: hidden;
     margin: 0;
-    color: #FF1744;
+    color: #1abc9c;
     background: #ffffff;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -108,14 +108,14 @@ body {
     position: absolute;
     right: 0;
     padding: 0.25em 1.25em;
-    color: #FF1744;
+    color: #1abc9c;
 }
 
 .menu__link:hover,
 .menu__link:focus,
 .menu__link[data-submenu]:hover::after,
 .menu__link[data-submenu]:focus::after {
-    color: red;
+    color: #1abc9c;
 }
 
 .menu__link--current::before {
@@ -126,7 +126,7 @@ body {
     top: 50%;
     left: 0.5em;
     height: 4px;
-    color: #FF1744;
+    color: #1abc9c;
 }
 
 [class^='animate-'],
@@ -253,7 +253,7 @@ body {
     vertical-align: middle;
     letter-spacing: 1px;
     text-transform: uppercase;
-    color: #FF1744;
+    color: #1abc9c;
 }
 
 .menu__breadcrumbs a:last-child {
@@ -262,7 +262,7 @@ body {
 
 .menu__breadcrumbs a:hover,
 .menu__breadcrumbs a:focus {
-    color: #FF1744;
+    color: #1abc9c;
 }
 
 .menu__breadcrumbs a:not(:last-child)::after {
@@ -503,7 +503,7 @@ a:hover {
 }
 
 .bp-nav__item:hover {
-    background: #FF1744;
+    background: #1abc9c;
 }
 
 .bp-icon:after {
@@ -513,7 +513,7 @@ a:hover {
     font-variant: normal;
     text-align: center;
     text-transform: none;
-    color: #FF1744;
+    color: #1abc9c;
     -webkit-font-smoothing: antialiased;
     speak: none;
 }
@@ -712,5 +712,5 @@ body #cdawrap a:hover.carbon-poweredby {
 }
 
 .red {
-    color: #FF1744;
+    color: #1abc9c;
 }
