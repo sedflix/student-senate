@@ -37,7 +37,7 @@
         <button class="action action--close" aria-label="Close Menu"><span class="icon icon--cross"></span></button>
         <div class="menu__wrap">
             <ul data-menu="main" class="menu__level" tabindex="-1" role="menu" aria-label="All">
-                <li class="menu__item" role="menuitem"><a class="menu__link" href="#">Latest News</a></li>
+                <li class="menu__item" role="menuitem"><a class="menu__link" href="#">Quick Links</a></li>
                 <li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-3"
                                                           aria-owns="submenu-3" href="#contact-us">Talk to Us</a></li>
                 <li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-4"
@@ -220,6 +220,7 @@
                 classie.add(gridWrapper, 'content--loading');
                 setTimeout(function () {
                     classie.remove(gridWrapper, 'content--loading');
+                    history.pushState("", itemName, itemName.replace(" ", ""));
                     gridWrapper.innerHTML = links[itemName.toString()]
                 }, 20);
             }
