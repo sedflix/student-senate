@@ -19,7 +19,7 @@ var links = {
     "Who are we?": loadDoc('whoarewe.html', "Who are we?"),
     "Our Duties": loadDoc('duties.html', "Our Duties"),
     "Election Guidelines": loadDoc('elections.html', "Election Guidelines"),
-    "Members": '<iframe class="airtable-embed" src="https://airtable.com/embed/shrMyyQNmP56RskGQ?backgroundColor=teal&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="100%" style="background: transparent; border: 1px solid #ccc;"></iframe><div class="bottomStuff2"><p><a href="old/prev.html">Past Members</a></p></div>',
+    "Members": '<iframe class="airtable-embed" src="https://airtable.com/embed/shrMyyQNmP56RskGQ?backgroundColor=teal&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="100%" style="background: transparent; border: 1px solid #ccc;"></iframe><div class="bottomStuff3" ><p style="margin-bottom: 3%"><a href="old/prev.html">Past Members</a></p></div>',
     "Meeting Minutes": '<iframe class="airtable-embed" src="https://airtable.com/embed/shrewxlovjLOBCKtc?backgroundColor=teal&layout=card&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="100%" style="background: transparent; border: 1px solid #ccc;"></iframe>',
     "Issues And Tasks": '<iframe class="airtable-embed" src="https://airtable.com/embed/shrF6WiI0UGmg6RZl?backgroundColor=teal&layout=card&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="100%" style="background: transparent; border: 1px solid #ccc;"></iframe>',
     "Solutions": '<iframe class="airtable-embed" src="https://airtable.com/embed/shr284TOjF7i5WfJx?backgroundColor=teal&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="100%" style="background: transparent; border: 1px solid #ccc;"></iframe>',
