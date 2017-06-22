@@ -186,7 +186,29 @@
     <script src="js/main.js"></script>
     <script src="js/embeddedData.js"></script>
     <script>
+        // source: https://gist.github.com/mathewbyrne/1280286
+        function slugify(text) {
+          return text.toString().toLowerCase()
+            .replace(/\s+/g, '-')           // Replace spaces with -
+            .replace(/[^\w\-]+/g, '-')       // Replace all non-word chars with -
+            .replace(/\-\-+/g, '-')         // Replace multiple - with single -
+            .replace(/^-+/, '')             // Trim - from start of text
+            .replace(/-+$/, '');            // Trim - from end of text
+        }
+
         (function () {
+
+            document.addEventListener("DOMContentLoaded", function(event) {
+              if (window.location.hash != "") {
+                var hash = window.location.hash.slice(1);
+                for (link in links) {
+                  if (slugify(link) === hash) {
+                    gridWrapper.innerHTML = links[link.toString()]
+                  }
+                }
+              }
+            });
+
             var menuEl = document.getElementById('ml-menu'),
                     mlmenu = new MLMenu(menuEl, {
                         breadcrumbsCtrl: true, // show breadcrumbs
@@ -212,7 +234,7 @@
                 classie.remove(menuEl, 'menu--open');
                 openMenuCtrl.focus();
             }
-
+            
             // simulate grid content loading
             var gridWrapper = document.querySelector('.content');
 
@@ -223,7 +245,7 @@
                 classie.add(gridWrapper, 'content--loading');
                 setTimeout(function () {
                     classie.remove(gridWrapper, 'content--loading');
-//                    history.pushState("", itemName, itemName.replace(" ", ""));
+                    window.location.hash = slugify(itemName.toString())
                     gridWrapper.innerHTML = links[itemName.toString()]
                 }, 20);
             }
