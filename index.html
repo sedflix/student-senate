@@ -196,12 +196,19 @@
             .replace(/-+$/, '');            // Trim - from end of text
         }
 
-        if (window.location.hash != "") {
-          // @geekSiddharth go through all possibilities, slugify each 
-          // and load the content if the slug matches
-        }
-
         (function () {
+
+            document.addEventListener("DOMContentLoaded", function(event) {
+              if (window.location.hash != "") {
+                var hash = window.location.hash.slice(1);
+                for (link in links) {
+                  if (slugify(link) === hash) {
+                    gridWrapper.innerHTML = links[link.toString()]
+                  }
+                }
+              }
+            });
+
             var menuEl = document.getElementById('ml-menu'),
                     mlmenu = new MLMenu(menuEl, {
                         breadcrumbsCtrl: true, // show breadcrumbs
