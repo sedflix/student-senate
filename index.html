@@ -186,6 +186,21 @@
     <script src="js/main.js"></script>
     <script src="js/embeddedData.js"></script>
     <script>
+        // source: https://gist.github.com/mathewbyrne/1280286
+        function slugify(text) {
+          return text.toString().toLowerCase()
+            .replace(/\s+/g, '-')           // Replace spaces with -
+            .replace(/[^\w\-]+/g, '')       // Remove all non-word chars
+            .replace(/\-\-+/g, '-')         // Replace multiple - with single -
+            .replace(/^-+/, '')             // Trim - from start of text
+            .replace(/-+$/, '');            // Trim - from end of text
+        }
+
+        if (window.location.hash != "") {
+          // @geekSiddharth go through all possibilities, slugify each 
+          // and load the content if the slug matches
+        }
+
         (function () {
             var menuEl = document.getElementById('ml-menu'),
                     mlmenu = new MLMenu(menuEl, {
@@ -212,7 +227,7 @@
                 classie.remove(menuEl, 'menu--open');
                 openMenuCtrl.focus();
             }
-
+            
             // simulate grid content loading
             var gridWrapper = document.querySelector('.content');
 
@@ -223,7 +238,7 @@
                 classie.add(gridWrapper, 'content--loading');
                 setTimeout(function () {
                     classie.remove(gridWrapper, 'content--loading');
-//                    history.pushState("", itemName, itemName.replace(" ", ""));
+                    window.location.hash = slugify(itemName.toString())
                     gridWrapper.innerHTML = links[itemName.toString()]
                 }, 20);
             }
