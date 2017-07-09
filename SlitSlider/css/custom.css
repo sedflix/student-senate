@@ -238,6 +238,30 @@
 	margin: 0 0 -120px 0;
 }
 
+.demo-1 .sl-slide p {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    left: 0;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    height: 70px;
+    color: #8b8b8b;
+    z-index: 2;
+    bottom: 50%;
+    margin: 0 0 -200px 0;
+    padding: 0;
+}
+
+.demo-1 .sl-slide p a {
+    color: #8b8b8b;
+}
+
+/*.slide-text ul{*/
+/*color: #8b8b8b;*/
+/*}*/
+
 .demo-1 .sl-slide blockquote {
 	position: absolute;
 	width: 100%;
@@ -255,10 +279,10 @@
 }
 
 .demo-1 .sl-slide blockquote p{
-	margin: 0 auto;
-	width: 60%;
-	max-width: 400px;
-	position: relative;
+    margin: 0 auto;
+    width: 60%;
+    max-width: 400px;
+    position: relative;
 }
 
 .demo-1 .sl-slide blockquote p:before {
@@ -290,7 +314,7 @@
 /* First Slide */
 .demo-1 .bg-1 .sl-slide-inner,
 .demo-1 .bg-1 .sl-content-slice {
-    background: #fff;
+    background: #f5f5f5;
 }
 
 /* Second Slide */
