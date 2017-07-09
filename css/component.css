@@ -1,6 +1,6 @@
 /* Icons (made with Icomoon.io) */
 /*@import url('https://fonts.googleapis.com/css?family=Roboto:300,400|');*/
-@import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,700,500');
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,700,500|Open+Sans');
 @font-face {
     font-family: 'feather';
     font-weight: normal;
@@ -703,14 +703,16 @@ body #cdawrap a:hover.carbon-poweredby {
 
 .block-text {
     font-size: 120%;
-    font-weight: 400;
+    font-weight: 300;
     color: #808080;
+    font-family: "Open Sans";
 }
 
 .block-text-main {
-    font-size: 150%;
+    font-size: 140%;
     font-weight: 400;
     color: #808080;
+    font-family: "Open Sans";
 }
 
 .red {
@@ -755,7 +757,6 @@ body #cdawrap a:hover.carbon-poweredby {
 
     .block-text {
         font-size: 100%;
-        letter-spacing: 2px;
     }
 }
 

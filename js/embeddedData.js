@@ -38,4 +38,5 @@ var links = {
     "Quick Links": '<iframe class="airtable-embed" src="https://airtable.com/embed/shrTXxDCIufvPbitu?backgroundColor=teal&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="100%" style="background: transparent; border: 1px solid #ccc;"></iframe>',
     "ProjectHub" : '<iframe class="airtable-embed" src="https://airtable.com/embed/shrY8gxfDgq2QbYBx?backgroundColor=purple&layout=card&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="100%" style="background: transparent; border: 1px solid #ccc;"></iframe>',
     "Submit a Project" : '<iframe class="airtable-embed" src="https://airtable.com/embed/shrDQYidCT966bo3E?backgroundColor=purple" frameborder="0" onmousewheel="" width="100%" height="100%" style="background: transparent; border: 1px solid #ccc;"></iframe>',
+    "Organisation Structure" : loadDoc("structure.html","Organisation Structure"),
 }
