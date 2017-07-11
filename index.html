@@ -176,7 +176,15 @@
                     var hash = window.location.hash.slice(1);
                     for (link in links) {
                         if (slugify(link) === hash) {
-                            gridWrapper.innerHTML = links[link.toString()]
+                            var fillPage = function () {
+                                gridWrapper.innerHTML = links[link.toString()];
+                            }
+                            
+                            if(links[link.toString()]) {
+                                fillPage();
+                            } else {
+                                waiting[link.toString()] = fillPage;
+                            }
                         }
                     }
                 }

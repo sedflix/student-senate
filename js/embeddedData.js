@@ -1,21 +1,27 @@
 /**
  * Created by Sid on 20-06-2017.
  */
+
+// holds callback functions for pageloads via loadDoc, see issue #2
+var waiting = {};
 function loadDoc(name, two) {
     var xhttp = new XMLHttpRequest();
     stringX = "";
     xhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
+            if (waiting[two]) {
+                waiting[two]();
+                waiting[two] = undefined;
+            }
             links[two] = this.response;
-        }
-        else {
         }
     };
     xhttp.open("GET", name.toString(), true);
-    return xhttp.send();
+    xhttp.send();
 }
 
 var links = {
+    // note that loadDoc doesn't actually return anything, it's just here because we're calling it near the keys
     "Who are we?": loadDoc('whoarewe.html', "Who are we?"),
     "Our Duties": loadDoc('duties.html', "Our Duties"),
     "Election Guidelines": loadDoc('elections.html', "Election Guidelines"),
