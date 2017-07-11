@@ -171,7 +171,7 @@
                     .replace(/-+$/, '');            // Trim - from end of text
         }
         (function () {
-            document.addEventListener("DOMContentLoaded", function(event) {
+            function loadPageFromHash() {
                 if (window.location.hash != "") {
                     var hash = window.location.hash.slice(1);
                     for (link in links) {
@@ -188,7 +188,10 @@
                         }
                     }
                 }
-            });
+            }
+            document.addEventListener("DOMContentLoaded", loadPageFromHash);
+            window.addEventListener("hashchange", loadPageFromHash, false);
+ 
             var menuEl = document.getElementById('ml-menu'),
                     mlmenu = new MLMenu(menuEl, {
                         breadcrumbsCtrl: true, // show breadcrumbs
@@ -221,7 +224,6 @@
                 setTimeout(function () {
                     classie.remove(gridWrapper, 'content--loading');
                     window.location.hash = slugify(itemName.toString())
-                    gridWrapper.innerHTML = links[itemName.toString()]
                 }, 20);
             }
         })();
