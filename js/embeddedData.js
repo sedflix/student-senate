@@ -9,11 +9,11 @@ function loadDoc(name, two) {
     stringX = "";
     xhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
+            links[two] = this.response;
             if (waiting[two]) {
                 waiting[two]();
                 waiting[two] = undefined;
             }
-            links[two] = this.response;
         }
     };
     xhttp.open("GET", name.toString(), true);

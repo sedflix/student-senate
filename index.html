@@ -174,7 +174,7 @@
             function loadPageFromHash() {
                 if (window.location.hash != "") {
                     var hash = window.location.hash.slice(1);
-                    for (link in links) {
+                    Object.keys(links).forEach(function (link) {
                         if (slugify(link) === hash) {
                             var fillPage = function () {
                                 gridWrapper.innerHTML = links[link.toString()];
@@ -186,7 +186,7 @@
                                 waiting[link.toString()] = fillPage;
                             }
                         }
-                    }
+                    });
                 }
             }
             document.addEventListener("DOMContentLoaded", loadPageFromHash);
