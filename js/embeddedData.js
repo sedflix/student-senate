@@ -23,6 +23,7 @@ function loadDoc(name, two) {
 var links = {
     // note that loadDoc doesn't actually return anything, it's just here because we're calling it near the keys
     "Who are we?": loadDoc('whoarewe.html', "Who are we?"),
+    "Things you can approach us for": '<iframe class="airtable-embed" src="https://airtable.com/embed/shrxFTHDAgHyxNnTn?backgroundColor=teal&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="100%" style="background: transparent; border: 1px solid #ccc;"></iframe>',
     "Our Duties": loadDoc('duties.html', "Our Duties"),
     "Election Guidelines": loadDoc('elections.html', "Election Guidelines"),
     "Members": '<iframe class="airtable-embed" src="https://airtable.com/embed/shrMyyQNmP56RskGQ?backgroundColor=teal&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="100%" style="background: transparent; border: 1px solid #ccc;"></iframe><div class="bottomStuff3" ><p style="margin-bottom: 3%"><a href="old/prev.html">Past Members</a></p></div>',
