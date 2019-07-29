@@ -47,5 +47,5 @@ var links = {
     "Submit a Project" : '<iframe class="airtable-embed" src="https://airtable.com/embed/shrDQYidCT966bo3E?backgroundColor=purple" frameborder="0" onmousewheel="" width="100%" height="100%" style="background: transparent; border: 1px solid #ccc;"></iframe>',
     "Organisation Structure" : loadDoc("structure.html","Organisation Structure"),
     "Ask a question": '<script src="https://static.airtable.com/js/embed/embed_snippet_v1.js"></script><iframe class="airtable-embed airtable-dynamic-height" src="https://airtable.com/embed/shr4CTBsTK5Nw5fRa?backgroundColor=teal" frameborder="0" onmousewheel="" width="100%" height="754" style="background: transparent; border: 1px solid #ccc;"></iframe>',
-    "FAQs": '<iframe class="airtable-embed" src="https://airtable.com/embed/shr17KOFqSuJO7AZG?backgroundColor=teal&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>',
+    "FAQs": '<iframe class="airtable-embed" src="https://airtable.com/embed/shr17KOFqSuJO7AZG?backgroundColor=teal&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="100%" style="background: transparent; border: 1px solid #ccc;"></iframe>',
 }
